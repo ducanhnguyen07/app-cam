@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/hello', methods=['GET'])
 def hello():
-    return jsonify({ "message": "Hello, World!" }), 200
+    return jsonify({ "message": "Hello World!" }), 200
 
 @app.route('/light', methods=['POST'])
 def receive_light_data():
